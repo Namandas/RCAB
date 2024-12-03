@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# **RBAC Management System**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Overview**
 
-## Available Scripts
+The **RBAC Management System** (Role-Based Access Control) is a comprehensive web application designed to facilitate user and role management with dynamic permission assignment. The system is built to empower administrators to manage access control efficiently in any organization or system requiring robust user and role management.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## **Features**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **1. User Management**
+- **View Users:** A comprehensive table displays user details (name, email, roles, and status).
+- **CRUD Operations:** 
+  - Add new users.
+  - Edit existing user details.
+  - Delete users securely.
+- **Role Assignment:** Assign or modify roles for users dynamically.
+- **Status Management:** Toggle user statuses between active and inactive for better control.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **2. Role Management**
+- **Create Roles:** Define roles with specific attributes and permissions.
+- **Edit Roles:** Modify existing roles to meet evolving requirements.
+- **Delete Roles:** Safely remove roles no longer in use.
 
-### `npm test`
+### **3. Dynamic Permissions**
+- **Assign Permissions:** Add or modify permissions for roles.
+- **Display Permissions:** Permissions are displayed clearly for ease of understanding.
+- **Custom Attributes:** Support for custom attributes in roles, enhancing flexibility.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **4. Custom API Simulation (Optional)**
+- **Mock API Integration:** Simulated API calls for CRUD operations on users and roles.
+- **Server Response Simulation:** Validate functionality by mimicking server behavior.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Technologies Used**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend:** React.js, Tailwind CSS
+- **Database:**  mocked data via `json-server` for simulation
+- **Tooling:** ESLint, Prettier
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## **Installation**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/rbac-management-system.git
+   cd rbac-management-system
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install Dependencies:
+   ```bash
+   npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Start the development server:
+   ```bash
+   npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the backend server:
+   ```bash
+   npx json-server --watch src/mock/db.json --port 3001
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. Project started at:
+   ```bash
+   http://localhost:3000
