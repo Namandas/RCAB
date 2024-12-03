@@ -1,0 +1,81 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "password": "password123",
+      "roles": [
+        "Viewer"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "password": "password456",
+      "roles": [
+        "Admin"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "3",
+      "name": "NamanAdmin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "roles": [
+        "Admin",
+        "Editor"
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "4",
+      "name": "Alice Cooper",
+      "email": "alicecooper@example.com",
+      "password": "password789",
+      "roles": [
+        "Editor"
+      ],
+      "status": "Inactive"
+    },
+    {
+      "id": "5",
+      "name": "Bob Marley",
+      "email": "bobmarley@example.com",
+      "password": "password101",
+      "roles": [
+        "Viewer"
+      ],
+      "status": "Active"
+    }
+  ],
+  "roles": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "permissions": [
+        "Read",
+        "Write",
+        "Delete"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Editor",
+      "permissions": [
+        "Read",
+        "Write"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Viewer",
+      "permissions": [
+        "Read"
+      ]
+    }
+  ]
+}
